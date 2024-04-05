@@ -1,15 +1,20 @@
-import React from 'react'
-
+import React from 'react';
+import { useState } from 'react';
+import ProjetCard from './components/project-card/ProjectCard';
+import Badge from './components/badge/Badge.jsx';
+import Nav from './components/navigation/Nav'
 // import { useState } from 'react'
 
 
-function App() {
+export default function App() {
 
   return (
     <div>
-    tesdasdxtsadsa
+      <Badge></Badge>
+      <Nav></Nav>
+      <ProjetCard></ProjetCard>
     </div>
   )
 }
 
-export default App
+
