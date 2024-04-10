@@ -1,5 +1,11 @@
 @forward 'structure.scss';
 
+//components
 @import '../components/badge/badge.scss';
 @import '../components/navigation/nav.scss';
-@import '../components/project-card/project-card.scss';
+@import '../components/Projects/project.scss';
+
+
+//views 
+@import '../components/Home/home.scss';
+@import '../components/Projects/project-card/project-card.scss';

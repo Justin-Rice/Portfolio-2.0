@@ -1,3 +1,8 @@
+$bg:  #131313;
+$rd: #DF1111;
+$wht: #FFFFFF;
+
+
 *{
   margin:0;
   padding: 0;
@@ -5,7 +10,68 @@
 }
 html, body {
 height: 100%;
+background-color: #161414;
+
 }
 h1, h2, h3, h4, h5, h5, h6, p{
   margin-bottom:16px;
+ 
+}
+
+//parent of element must be positioned relative for these to position correctly
+.bottom-right{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 80px;
+  // background-color: none;
+  width: 80px;
+  border-bottom: $wht 3px solid;
+  border-right: $wht 3px solid; 
+}
+
+.top-left{
+  position: absolute;
+  border-top: $wht 3px solid;
+  border-left: $wht 3px solid;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 80px;
+  transition: 0.5s;
+
+}
+
+@font-face {
+  font-family: title;
+  src: url('../assets/fonts/GowunBatang-Regular.ttf');
+}
+
+@font-face {
+  font-family: body;
+  src: url('../assets/fonts/Gayathri-Regular.ttf');
+}
+
+@media(max-width: 1350px){
+  .bottom-right{
+ height: 60px;
+ width: 60px;
+  }
+
+  .top-left{
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media(max-width: 800px){
+  .bottom-right{
+    height: 30px;
+    width: 30px;
+  }
+
+  .top-left{
+    height: 30px;
+    width: 30px;
+  }
 }

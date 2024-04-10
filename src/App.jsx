@@ -1,18 +1,20 @@
 import React from 'react';
 import { useState } from 'react';
-import ProjetCard from './components/project-card/ProjectCard';
-import Badge from './components/badge/Badge.jsx';
 import Nav from './components/navigation/Nav'
-// import { useState } from 'react'
+import Home from './components/Home/Home.jsx';
+import Projects from './components/Projects/Projects.jsx';
 
 
 export default function App() {
 
   return (
     <div>
-      <Badge></Badge>
-      <Nav></Nav>
-      <ProjetCard></ProjetCard>
+    <Home>
+
+    </Home>
+    <Projects>
+
+    </Projects>
     </div>
   )
 }
