@@ -3,16 +3,16 @@
 .home{
     margin: 0 auto;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 50px;
 
     .home-container{
         margin: 0 auto;
-        height: 550px;
+        height: 660px;
         width: 60%;
         position: relative;
         transition: 0.5s;
-
+        // background-color: orang;
         .home-flex{
             display: flex;
             justify-content: space-evenly;
@@ -40,6 +40,11 @@
             }
             &-title{
                 color: structure.$rd;
+                // text-shadow:
+                //  0px 0px 2px rgba(103,5,5,1), 
+                //  0px 0px 1px rgba(103,5,5,1), 
+                //  0px 0px 3px rgba(103,5,5,1);
+                
                 font-size: 40px;
                 letter-spacing: 3px;
                 width:  690px;
@@ -55,13 +60,60 @@
             }
             &-body{
                 max-width: 325px;
-                letter-spacing: 1px;
+                // letter-spacing: 1px;
                 font-family: body;
                 transition: 0.5s;
-
+                line-height: 28px;
                 font-size: 18px;
             }
 
+            &-badges{
+                display: flex;
+                // align-items: flex-start;
+                 justify-content: start;
+                justify-content:flex-start;
+                flex-wrap: wrap;
+                gap: 6px  6px;
+                //  background-color: pink;
+                 width: 324px;
+                 position: relative;
+                 left: -5px;
+                 margin-top: 5px;
+                 margin-bottom: 12px;
+            }
+
+            &-links{
+                margin-top: 50px;
+                height: 80px;
+                width: 220px;
+                display: flex;
+                gap: 20px;
+                transition: 0.4s;
+                .icon{
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                object-fit: fill;
+                height: 38px;
+                width: 38px;
+                font-size: 28px;
+                color: rgb(202, 196, 196);
+                // background-color: orange;
+                // font-size: 40px;
+                cursor: pointer;
+                border-radius: 2px;
+                transition: 0.2s;
+                background-color: structure.$bg;
+                // background-color: white;
+
+                border: none;
+                }
+                .icon:hover{
+                    color: rgba(255, 254, 254, 1);
+                    
+                }
+
+            }
 
         }
         .home-img{
@@ -93,7 +145,7 @@
         margin-bottom: 50px;
         .home-container{
             margin: 0 auto;
-            height:500px;
+            // height:630px;
             width: 70%;
     
             .home-flex{
@@ -104,7 +156,7 @@
             }
             .home-info{ 
                  width: 300px;
-               
+
                 &-name{
                     font-size: 28px;
                     letter-spacing: 4px;
@@ -125,6 +177,16 @@
                     letter-spacing: 1px;
                     font-size: 16px;
                 }
+                &-links{
+                    margin-top: 30px;
+                    .icon{
+                    height: 30px;
+                    width: 30px;
+                    }
+
+                }
+    
+                
     
     
             }
@@ -144,23 +206,25 @@
     .home{
         margin: 0 auto;
         // background-color: orangered;
-        // height: 300px;
+        //  height: 300px;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 50px;
         .home-container{
         margin: 0 auto;
-            height: 600px;
+            height: 550px;
             width: 70%;
-            //   background-color: brown;
+            // background-color: brown;
             position: relative;
-            height: auto;
+            height: 610px;
     
             .home-flex{
                 display: flex;
                  align-items: center;
                 justify-content: space-around;
                 height:auto;
+                 height: 670px;
+
                 //  background-color: palevioletred;
                  flex-shrink: 0;
                   min-width:290px;
@@ -200,6 +264,23 @@
                     font-family: body;
     
                     font-size: 13px;
+                }
+                &-badges{
+                    // margin: 0 auto;
+                    width: 250px;
+                    // background-color: gold;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 5px;
+                    // justify-content: space-around;
+                }
+                &-links{
+                    margin-top: 30px;
+                    .icon{
+                    height: 30px;
+                    width: 30px;
+                    }
+
                 }
     
     

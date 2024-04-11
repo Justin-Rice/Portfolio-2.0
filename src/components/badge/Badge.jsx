@@ -1,6 +1,9 @@
-
-export default function Badge(){
+import './badge.scss';
+export default function Badge(props){
+    console.log(props);
+    let badgeClass = props.size ?? 'badge';
+    
     return(
-        <div className="badge">badge</div>
+        <div className={badgeClass}>{props.skill}</div>
     )
 }
