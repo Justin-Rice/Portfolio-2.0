@@ -153,6 +153,15 @@ h1, h2, h3, h4, h5, h5, h6, p {
   -webkit-box-shadow: 0px 0px 2px 1px rgba(223, 17, 17, 0.1);
   box-shadow: 0px 0px 2px 1px rgba(223, 17, 17, 0.1);
 }
+
+.badge.S {
+  padding-left: 11px;
+  padding-right: 11px;
+  line-height: 30px;
+  height: 22px;
+  font-size: 14px;
+}
+
 @media (max-width: 1350px) {
   .badge {
     padding-left: 13px;
@@ -272,8 +281,103 @@ h1, h2, h3, h4, h5, h5, h6, p {
     width: 10px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #161414;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 80px;
+  width: 80px;
+  border-bottom: #FFFFFF 3px solid;
+  border-right: #FFFFFF 3px solid;
+}
+
+.top-left {
+  position: absolute;
+  border-top: #FFFFFF 3px solid;
+  border-left: #FFFFFF 3px solid;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@font-face {
+  font-family: title;
+  src: url("../assets/fonts/GowunBatang-Regular.ttf");
+}
+@font-face {
+  font-family: body;
+  src: url("../assets/fonts/Gayathri-Regular.ttf");
+}
+@media (max-width: 1350px) {
+  .bottom-right {
+    height: 60px;
+    width: 60px;
+  }
+  .top-left {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .bottom-right {
+    height: 30px;
+    width: 30px;
+  }
+  .top-left {
+    height: 30px;
+    width: 30px;
+  }
+}
 .projects {
-  height: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.projects-title {
+  font-family: title;
+  font-weight: 500;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-size: 40px;
+  position: relative;
+  left: -25px;
+  letter-spacing: 3px;
+  color: #DF1111;
+}
+.projects-container {
+  margin: 0 auto;
+  min-height: 800px;
+  width: 56%;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: auto;
+}
+.projects-flex {
+  margin-top: 40px;
+  height: auto;
 }
 
 * {
@@ -347,7 +451,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
   margin: 0 auto;
   width: 100%;
   margin-top: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .home .home-container {
   margin: 0 auto;
@@ -619,5 +723,179 @@ h1, h2, h3, h4, h5, h5, h6, p {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     margin-top: 40px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #161414;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 80px;
+  width: 80px;
+  border-bottom: #FFFFFF 3px solid;
+  border-right: #FFFFFF 3px solid;
+}
+
+.top-left {
+  position: absolute;
+  border-top: #FFFFFF 3px solid;
+  border-left: #FFFFFF 3px solid;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@font-face {
+  font-family: title;
+  src: url("../assets/fonts/GowunBatang-Regular.ttf");
+}
+@font-face {
+  font-family: body;
+  src: url("../assets/fonts/Gayathri-Regular.ttf");
+}
+@media (max-width: 1350px) {
+  .bottom-right {
+    height: 60px;
+    width: 60px;
+  }
+  .top-left {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .bottom-right {
+    height: 30px;
+    width: 30px;
+  }
+  .top-left {
+    height: 30px;
+    width: 30px;
+  }
+}
+.project-card {
+  height: 220px;
+  background-color: rgba(51, 51, 51, 0.1);
+  width: 600px;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.project-card-info {
+  height: 200px;
+  width: 370px;
+  margin-right: 8px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.project-card-info-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.project-card-info-title {
+  font-family: title;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-top: -12px;
+}
+.project-card-info-badges {
+  margin-top: 1px;
+  width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 6px 6px;
+}
+.project-card-info-desc {
+  color: #FFFFFF;
+  font-family: body;
+  margin-top: 8px;
+  line-height: 22px;
+}
+.project-card-info a {
+  text-decoration: none;
+}
+.project-card-info-source {
+  margin-top: 2px;
+  text-decoration: none;
+  font-family: body;
+  color: #DF1111;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 22px;
+}
+.project-card-info-source:hover {
+  text-shadow: 0px 0px 2px rgb(103, 5, 5), 0px 0px 1px rgb(103, 5, 5), 0px 0px 3px rgb(103, 5, 5);
+}
+.project-card .project-img {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  height: 150px;
+  width: 200px;
+  margin-top: -50px;
+  margin-left: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 800px) {
+  .project-card {
+    height: 100px;
   }
 }
