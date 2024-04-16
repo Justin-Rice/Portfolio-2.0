@@ -4,7 +4,7 @@ import './project-card.scss';
 
 export default function ProjectCard(props){
     const {title, img, badges, description, github, url} = props.data;
-    // console.log(description)
+
     return(
         <div className="project-card"> 
         <div className="project-card-info">
@@ -18,10 +18,12 @@ export default function ProjectCard(props){
                     }
                 </div>
                 <div className="project-card-info-desc">{description}</div>
-               <a href={url} target='_blank'> <div className="project-card-info-source">Source</div></a>
+               <a href={github} target='_blank'> <div className="project-card-info-source">Source</div></a>
             </div>
         </div>
-        <div className="project-img"></div>
+       <a href={url}> <img  src={"imgs/" + img } className="project-img"/></a>
+        
         </div>
     )
+    // src\assets\imgs\Music-db-2.0.PNG
 }

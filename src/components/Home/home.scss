@@ -2,17 +2,17 @@
 
 .home{
     margin: 0 auto;
-    width: 100%;
+    // width: 100%;
     margin-top: 60px;
     margin-bottom: 80px;
-
+    // background-color: brown;
     .home-container{
         margin: 0 auto;
         height: 660px;
-        width: 60%;
+        width: 70%;
         position: relative;
         transition: 0.5s;
-        // background-color: orang;
+        //  background-color: orange;
         .home-flex{
             display: flex;
             justify-content: space-evenly;
@@ -52,10 +52,12 @@
 
             }
             &-brief{
-                font-size: 28px;
+                font-size: 27px;
                 font-family: body;
-                max-width:  417px;
+                 max-width:  450px;
+                // max-width:  960px;
                 transition: 0.5s;
+                // background-color: rebeccapurple;
 
             }
             &-body{
@@ -127,8 +129,12 @@
             flex-shrink: 0;
              margin-top: 40px;
              transition: 0.3s;
+             
 
-            //  margin-left: 100px;
+            // img{
+            //     border-radius: 190px;
+ 
+            // }
         }
         
     }
@@ -146,16 +152,17 @@
         .home-container{
             margin: 0 auto;
             // height:630px;
-            width: 70%;
+            width: 80%;
+           
     
             .home-flex{
-                //  background-color: palegreen;
+                //   background-color: palegreen;
                   flex-shrink: 0;
                   min-width:540px;
     
             }
             .home-info{ 
-                 width: 300px;
+                 width: 350px;
 
                 &-name{
                     font-size: 28px;
@@ -166,6 +173,7 @@
                     color: structure.$rd;
                     font-size: 36px;
                     letter-spacing: 2px;
+                     width: 500px;
                     
                 }
                 &-brief{
@@ -248,9 +256,11 @@
                 }
                 &-title{
                     color: structure.$rd;
-                    font-size: 26px;
+                    font-size: 22px;
                     letter-spacing: 1px;
                     // width:  690px;
+                    width: 300px;
+
                     // position: fixed;
                 }
                 &-brief{

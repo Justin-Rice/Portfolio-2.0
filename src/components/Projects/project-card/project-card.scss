@@ -1,40 +1,42 @@
  @use '../../../scss/structure.scss';
 
 .project-card{
-    height: 220px;
-  background-color: rgba(51, 51, 51, 0.1);
-    width:600px;
+    height: 250px;
+  background-color: rgba(51, 51, 51, 0.2);
+    width:650px;
     margin: 30px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    &-info{
+    border-radius: 1px;
 
+    &-info{
+        // background-color: gray;
         &-flex{
         display: flex;
         align-items: start;
         justify-content: space-between;
         flex-direction: column;
-
         }
-        height: 200px;
-        width:370px;
+
+        height: 220px;
+        width:420px;
         margin-right: 8px;
-        //  background-color: green;
+        //    background-color: green;
+
         order: 1;
 
         &-title{
             font-family: title;
             color: structure.$wht;
             letter-spacing: 1px;
-            font-size: 30px;
-            margin-top: -12px;
+            font-size: 32px;
+            margin-top: -16px;
         }
         &-badges{
-            margin-top: 1px;
-            width: 260px;
-            // background-color: pink;
+            margin-top: 12px;
+            width: 280px;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -47,20 +49,25 @@
         &-desc{
             color: structure.$wht;
             font-family: body;
-            margin-top: 8px;
+            font-size: 16px;
+            margin-top: 12px;
             line-height: 22px;
+            letter-spacing: 1px;
+            // font-weight: 800;
 
         }
         a{
             text-decoration: none;
         }
         &-source{
-            margin-top: 2px;
+            margin-top: 18px;
             text-decoration: none;
             font-family: body;
             color: structure.$rd;
             transition: 0.3s;
             font-size: 22px;
+            position: relative;
+            bottom: 10px;
 
 
         }
@@ -72,61 +79,117 @@
         }
 
     }
-    .project-img{
+    .project-img {
         order: 0;
         height: 150px;
         width:200px;
-        margin-top: -50px;
+        margin-top: -80px;
         margin-left: 10px;
         background-color: rgb(255, 255, 255);
+        position: relative;
+         object-fit: contain;
+         background-color: rgba(51, 51, 51, 0.2);
+
+        // background-color: structure.$bg;
+       
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // object-fit: fill;
     }
 }
 
 
 @media(max-width: 1350px){
     .project-card{
+        // background-color: palegoldenrod;
+        height: 210px;
+        width: 460px;
         &-info{
+
+            &-flex{
+                // flex-direction: column;
+            }
             &-title{
-    
+                font-size: 26px;
+                margin-top: -7px;
             }
             &-badges{
-    
             }
             &-desc{
-    
+                font-size: 12px;
+                line-height: 17px;
+                // background-color: aliceblue;
+                width: 255px;
+                letter-spacing: normal;
             }
             &-source{
-    
+                font-size: 20px;
             }
     
         }
-        &-img{
+        .project-img{
+            margin-bottom: 30px;
+            margin-right: 10px;
+            margin-left: 8px;
+            height: 125px;
+            width: 175px;
+            margin-top: -40px;
     
         }
+    
     }
 
+    
 }
 
 @media(max-width: 800px){
     .project-card{
-        height: 100px;
+         height: 390px;
+        // background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 280px;
         &-info{
-
+            //  background-color: pink;
+             height: fit-content;
+                width: 260px;
+             margin-bottom: -10px;
             &-title{
-    
+                margin: auto;
+               
             }
             &-badges{
-    
+                 justify-content:center;
+                // margin: 0 auto;
+                // margin-left: 50px;
+                align-items: center;
             }
             &-desc{
+                margin: 15px auto;
+                text-align: center;
+                width: 80%;
     
             }
             &-source{
-    
+             margin: auto;
+            //    background-color: blanchedalmond;
+            text-align: center;position: relative;
+            left: 90px;
             }
     
         }
-        &-img{
+        .project-img{
+            // margin-bottom: 30px;
+            // margin-right: 10px;
+            // margin-left: 8px;
+            height: 125px;
+            width: 175px;
+            position: relative;
+            top: 35px;
+            //  margin-top:50px;
     
         }
     }

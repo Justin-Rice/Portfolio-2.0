@@ -37,9 +37,9 @@
 .badge.S{
     padding-left: 11px;
     padding-right: 11px;
-    line-height: 30px;
-    height: 22px;
-    font-size: 14px;
+    line-height: 32px;
+    height: 25px;
+    font-size: 16px;
 
 }
 
@@ -50,6 +50,14 @@
         height: 27px;
         font-size: 18px;
         line-height: 33px;
+    }
+    .badge.S{
+        padding-left: 11px;
+        padding-right: 11px;
+        line-height: 30px;
+        height: 22px;
+        font-size: 14px;
+    
     }
 
 }

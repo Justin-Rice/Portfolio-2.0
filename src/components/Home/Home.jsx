@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 
 export default function Home(){
-let arr = ["HTML", "CSS", "JavaScript", "SCSS", "Git", "React", "JQuery", "Figma", "Adobe XD", "Firebase"]
+let arr = ["HTML", "CSS", "JavaScript", "SCSS", "Git", "React","JSX", "JQuery", "Figma", "Photoshop", "Firebase", "NoSQL", 'Vite']
 
     return (
         <Element>
@@ -16,7 +16,10 @@ let arr = ["HTML", "CSS", "JavaScript", "SCSS", "Git", "React", "JQuery", "Figma
                     <div className="home-info">
                         <div className="home-info-name">JUSTIN RICE</div>
                         <div className="home-info-title">FRONTEND DEVELOPER</div>
-                        <div className="home-info-brief">Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed do </div>
+                        <div className="home-info-brief">
+                            Developing pixel perfect webpages, specializing in ReactJS
+                            {/* Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed do  */} 
+                            </div>
                         <div className="home-info-badges">
                            {
                                 arr.map((skill, index)=>{
@@ -27,14 +30,15 @@ let arr = ["HTML", "CSS", "JavaScript", "SCSS", "Git", "React", "JQuery", "Figma
                             
                         </div>
                         <div className="home-info-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        I am a developer based in Indianapolis, having graduated from the IUI Luddy School of Informatics in 2022 with a specialization in full-stack development. Outside of work, I enjoy baking, film photography, and going to Pacers games.
                         </div>
                         <div className="home-info-links">
-                         <FaLinkedin className="icon linkedin"/>
-                         <FaGithub className="icon github" />
+                        <a target="_blank" href="https://www.linkedin.com/in/justin-rice-1691371a6/"> <FaLinkedin className="icon linkedin"/></a>
+                        <a href=""> <FaGithub className="icon github" /> </a>
                         </div>
                     </div>
-                    <div className="home-img"></div>
+                        <img className='home-img'src="/imgs/me.png" alt="" />
+                 
                 </div>
                 <div className="top-left"></div>
                 <div className="bottom-right"></div>
