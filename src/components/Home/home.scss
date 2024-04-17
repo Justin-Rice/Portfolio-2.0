@@ -8,7 +8,7 @@
     // background-color: brown;
     .home-container{
         margin: 0 auto;
-        height: 660px;
+        height: 670px;
         width: 70%;
         position: relative;
         transition: 0.5s;
@@ -30,6 +30,7 @@
             width: 400px;
             color: structure.$wht;
             transition: 0.5s;
+            // background-color: red;
 
             &-name{
                 font-size: 32px;
@@ -67,6 +68,7 @@
                 transition: 0.5s;
                 line-height: 28px;
                 font-size: 18px;
+                // background-color: palevioletred;
             }
 
             &-badges{
@@ -85,12 +87,14 @@
             }
 
             &-links{
-                margin-top: 50px;
+                margin-top: 10px;
                 height: 80px;
                 width: 220px;
                 display: flex;
                 gap: 20px;
                 transition: 0.4s;
+                // background-color: paleturquoise;
+                // margin-bottom: 20px;
                 .icon{
                 background-repeat: no-repeat;
                 background-position: center;
@@ -174,16 +178,19 @@
                     font-size: 36px;
                     letter-spacing: 2px;
                      width: 500px;
+                    //  margin-top: 29px;
                     
                 }
                 &-brief{
                     font-size: 24px;
-                    max-width:  417px;
+                    width:  380px;
+                    // background-color: red;
                 }
                 &-body{
                     max-width: 325px;
                     letter-spacing: 1px;
                     font-size: 16px;
+                    line-height: 20px;
                 }
                 &-links{
                     margin-top: 30px;
@@ -264,9 +271,9 @@
                     // position: fixed;
                 }
                 &-brief{
-                    font-size: 18px;
+                    font-size: 17px;
                     font-family: body;
-                    max-width:  417px;
+                    width:  317px;
                 }
                 &-body{
                     max-width: 325px;

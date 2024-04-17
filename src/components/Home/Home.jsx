@@ -18,8 +18,7 @@ let arr = ["HTML", "CSS", "JavaScript", "SCSS", "Git", "React","JSX", "JQuery", 
                         <div className="home-info-title">FRONTEND DEVELOPER</div>
                         <div className="home-info-brief">
                             Developing pixel perfect webpages, specializing in ReactJS
-                            {/* Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed do  */} 
-                            </div>
+                        </div>
                         <div className="home-info-badges">
                            {
                                 arr.map((skill, index)=>{
@@ -30,11 +29,11 @@ let arr = ["HTML", "CSS", "JavaScript", "SCSS", "Git", "React","JSX", "JQuery", 
                             
                         </div>
                         <div className="home-info-body">
-                        I am a developer based in Indianapolis, having graduated from the IUI Luddy School of Informatics in 2022 with a specialization in full-stack development. Outside of work, I enjoy baking, film photography, and going to Pacers games.
+                        I am a developer based in Indianapolis. I graduated from IU Indy's Luddy School of Informatics in 2022 with a specialization in full-stack development. Outside of work, I enjoy baking, film photography, and going to Pacers games.
                         </div>
                         <div className="home-info-links">
-                        <a target="_blank" href="https://www.linkedin.com/in/justin-rice-1691371a6/"> <FaLinkedin className="icon linkedin"/></a>
-                        <a href=""> <FaGithub className="icon github" /> </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/justin-rice-1691371a6/"> <FaLinkedin className="icon linkedin"/></a>
+                            <a href=""> <FaGithub className="icon github" /> </a>
                         </div>
                     </div>
                         <img className='home-img'src="/imgs/me.png" alt="" />

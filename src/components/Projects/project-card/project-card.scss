@@ -5,27 +5,26 @@
   background-color: rgba(51, 51, 51, 0.2);
     width:650px;
     margin: 30px auto;
+    margin-top: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     border-radius: 1px;
 
+
     &-info{
-        // background-color: gray;
+        height: 220px;
+        width:420px;
+        margin-right: 8px;
+        order: 1;
+
         &-flex{
         display: flex;
         align-items: start;
         justify-content: space-between;
         flex-direction: column;
         }
-
-        height: 220px;
-        width:420px;
-        margin-right: 8px;
-        //    background-color: green;
-
-        order: 1;
 
         &-title{
             font-family: title;
@@ -53,7 +52,7 @@
             margin-top: 12px;
             line-height: 22px;
             letter-spacing: 1px;
-            // font-weight: 800;
+            height: 85px;
 
         }
         a{
@@ -89,38 +88,32 @@
         position: relative;
          object-fit: contain;
          background-color: rgba(51, 51, 51, 0.2);
-
-        // background-color: structure.$bg;
-       
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
-        // object-fit: fill;
     }
 }
 
 
 @media(max-width: 1350px){
     .project-card{
-        // background-color: palegoldenrod;
-        height: 210px;
+        height: 230px;
         width: 460px;
         &-info{
 
             &-flex{
-                // flex-direction: column;
+             
             }
             &-title{
                 font-size: 26px;
-                margin-top: -7px;
+                margin-top: 1px;
             }
             &-badges{
+                width: 265px;
             }
             &-desc{
                 font-size: 12px;
                 line-height: 17px;
                 // background-color: aliceblue;
                 width: 255px;
+                height: 80px;
                 letter-spacing: normal;
             }
             &-source{
@@ -171,6 +164,7 @@
                 margin: 15px auto;
                 text-align: center;
                 width: 80%;
+                height: 100px;
     
             }
             &-source{

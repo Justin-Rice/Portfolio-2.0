@@ -2,10 +2,10 @@
 
 
 .projects{
-    //  margin: 0 auto;
-    // width: 100%;
     margin-top: 60px;
     margin-bottom: 50px;
+    position: relative;
+
     
     &-title{
         font-family: title;
@@ -14,30 +14,28 @@
         margin: 0 auto;
         margin-bottom: 70px;
         font-size: 40px;
-        // background-color: orange;
         position: relative;
         left: -25px;
         letter-spacing: 3px;
-
         color: structure.$rd;
 
     }
     &-container{
         margin: 0 auto;
-        // margin-top: 30px;
-        min-height: 800px;
-        // background-color: pink;
-        width: 63%;
+        width: 61%;
         position: relative;
         transition: 0.5s;
-        overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
     }
 
     &-flex{
-        margin-top: 80px;
-        // background-color: red;
-        height: auto;
     
     }
 }
 
+@media(max-width: 1350px){
+   
+
+}

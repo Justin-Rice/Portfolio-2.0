@@ -355,6 +355,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
 .projects {
   margin-top: 60px;
   margin-bottom: 50px;
+  position: relative;
 }
 .projects-title {
   font-family: title;
@@ -370,18 +371,13 @@ h1, h2, h3, h4, h5, h5, h6, p {
 }
 .projects-container {
   margin: 0 auto;
-  min-height: 800px;
-  width: 63%;
+  width: 61%;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.projects-flex {
-  margin-top: 80px;
-  height: auto;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -455,7 +451,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
 }
 .home .home-container {
   margin: 0 auto;
-  height: 660px;
+  height: 670px;
   width: 70%;
   position: relative;
   -webkit-transition: 0.5s;
@@ -531,7 +527,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
   margin-bottom: 12px;
 }
 .home .home-container .home-info-links {
-  margin-top: 50px;
+  margin-top: 10px;
   height: 80px;
   width: 220px;
   display: -webkit-box;
@@ -609,12 +605,13 @@ h1, h2, h3, h4, h5, h5, h6, p {
   }
   .home .home-container .home-info-brief {
     font-size: 24px;
-    max-width: 417px;
+    width: 380px;
   }
   .home .home-container .home-info-body {
     max-width: 325px;
     letter-spacing: 1px;
     font-size: 16px;
+    line-height: 20px;
   }
   .home .home-container .home-info-links {
     margin-top: 30px;
@@ -683,9 +680,9 @@ h1, h2, h3, h4, h5, h5, h6, p {
     width: 300px;
   }
   .home .home-container .home-info-brief {
-    font-size: 18px;
+    font-size: 17px;
     font-family: body;
-    max-width: 417px;
+    width: 317px;
   }
   .home .home-container .home-info-body {
     max-width: 325px;
@@ -798,6 +795,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
   background-color: rgba(51, 51, 51, 0.2);
   width: 650px;
   margin: 30px auto;
+  margin-top: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -871,6 +869,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
   margin-top: 12px;
   line-height: 22px;
   letter-spacing: 1px;
+  height: 85px;
 }
 .project-card-info a {
   text-decoration: none;
@@ -906,17 +905,21 @@ h1, h2, h3, h4, h5, h5, h6, p {
 
 @media (max-width: 1350px) {
   .project-card {
-    height: 210px;
+    height: 230px;
     width: 460px;
   }
   .project-card-info-title {
     font-size: 26px;
-    margin-top: -7px;
+    margin-top: 1px;
+  }
+  .project-card-info-badges {
+    width: 265px;
   }
   .project-card-info-desc {
     font-size: 12px;
     line-height: 17px;
     width: 255px;
+    height: 80px;
     letter-spacing: normal;
   }
   .project-card-info-source {
@@ -971,6 +974,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
     margin: 15px auto;
     text-align: center;
     width: 80%;
+    height: 100px;
   }
   .project-card-info-source {
     margin: auto;
@@ -984,4 +988,93 @@ h1, h2, h3, h4, h5, h5, h6, p {
     position: relative;
     top: 35px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  background-color: #0D0D0D;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 80px;
+  width: 80px;
+  border-bottom: #FFFFFF 3px solid;
+  border-right: #FFFFFF 3px solid;
+}
+
+.top-left {
+  position: absolute;
+  border-top: #FFFFFF 3px solid;
+  border-left: #FFFFFF 3px solid;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@font-face {
+  font-family: title;
+  src: url("../assets/fonts/GowunBatang-Regular.ttf");
+}
+@font-face {
+  font-family: body;
+  src: url("../assets/fonts/Gayathri-Regular.ttf");
+}
+@media (max-width: 1350px) {
+  .bottom-right {
+    height: 60px;
+    width: 60px;
+  }
+  .top-left {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .bottom-right {
+    height: 30px;
+    width: 30px;
+  }
+  .top-left {
+    height: 30px;
+    width: 30px;
+  }
+}
+.photography {
+  margin-top: 100px;
+  height: 750px;
+}
+.photography .photos-title {
+  font-family: title;
+  font-weight: 500;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-size: 40px;
+  position: relative;
+  left: -25px;
+  letter-spacing: 3px;
+  color: #DF1111;
+}
+.photography .photos-title #dev {
+  font-size: 20px;
+  font-family: body;
+  line-height: 30px;
+  margin-bottom: 30px;
+  color: white;
 }

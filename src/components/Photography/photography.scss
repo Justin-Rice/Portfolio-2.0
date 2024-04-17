@@ -1,0 +1,29 @@
+@use '../../scss/structure.scss';
+
+
+.photography{
+    margin-top: 100px;
+    height: 750px;
+
+    .photos-title{
+        font-family: title;
+        font-weight: 500;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        font-size: 40px;
+        position: relative;
+        left: -25px;
+        letter-spacing: 3px;
+        color: structure.$rd;
+
+        #dev{
+        font-size: 20px;
+        font-family: body;
+        line-height: 30px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    }
+
+}

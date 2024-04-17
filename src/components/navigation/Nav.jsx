@@ -29,7 +29,16 @@ export default function Nav(){
                 activeClass='active'
               />
             
-            <a alt="projects" href="#projects" className="dot" id='d3'></a>
+            <Link 
+                to="photography" 
+                smooth='easeInCubic'
+                duration={400}
+                className="dot"
+                id='d3'
+                isDynamic={true}
+                spy={true}
+                activeClass='active'
+              />
         </div>
     )
 }
