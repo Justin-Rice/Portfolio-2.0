@@ -12,8 +12,8 @@ export const projects = [
         img: 'musicdb1.0.png',
         badges: ['HTML','CSS','JavaScript','Firebase', 'Adobe XD'],
         description: 'A simple music library that was designed and developed by me, utilizing local Firebase storage and functions, to filter a preset number of albums based on their genre.',
-        github: 'https://www.google.com',
-        url: 'https://www.google.com',
+        github: 'https://github.com/Justin-Rice/homework-six-n423',
+        url: 'https://jr-n423-2.web.app/',
     },
     {
         title: 'Portfolio',

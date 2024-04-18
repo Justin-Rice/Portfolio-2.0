@@ -36,6 +36,11 @@ h1, h2, h3, h4, h5, h5, h6, p {
   transition: 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 @font-face {
   font-family: title;
   src: url("../assets/fonts/GowunBatang-Regular.ttf");
@@ -62,6 +67,14 @@ h1, h2, h3, h4, h5, h5, h6, p {
   .top-left {
     height: 30px;
     width: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-right {
+    display: none;
+  }
+  .top-left {
+    display: none;
   }
 }
 * {
@@ -102,6 +115,11 @@ h1, h2, h3, h4, h5, h5, h6, p {
   transition: 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 @font-face {
   font-family: title;
   src: url("../assets/fonts/GowunBatang-Regular.ttf");
@@ -128,6 +146,14 @@ h1, h2, h3, h4, h5, h5, h6, p {
   .top-left {
     height: 30px;
     width: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-right {
+    display: none;
+  }
+  .top-left {
+    display: none;
   }
 }
 .badge {
@@ -215,6 +241,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   opacity: 0;
+  cursor: pointer;
 }
 .nav #d1 {
   -webkit-animation: stagger 0.5s forwards;
@@ -324,6 +351,11 @@ h1, h2, h3, h4, h5, h5, h6, p {
   transition: 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 @font-face {
   font-family: title;
   src: url("../assets/fonts/GowunBatang-Regular.ttf");
@@ -352,10 +384,20 @@ h1, h2, h3, h4, h5, h5, h6, p {
     width: 30px;
   }
 }
+@media (max-width: 500px) {
+  .bottom-right {
+    display: none;
+  }
+  .top-left {
+    display: none;
+  }
+}
 .projects {
   margin-top: 60px;
   margin-bottom: 50px;
   position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
 .projects-title {
   font-family: title;
@@ -416,6 +458,11 @@ h1, h2, h3, h4, h5, h5, h6, p {
   transition: 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 @font-face {
   font-family: title;
   src: url("../assets/fonts/GowunBatang-Regular.ttf");
@@ -442,6 +489,14 @@ h1, h2, h3, h4, h5, h5, h6, p {
   .top-left {
     height: 30px;
     width: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-right {
+    display: none;
+  }
+  .top-left {
+    display: none;
   }
 }
 .home {
@@ -488,6 +543,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
 }
 .home .home-container .home-info-title {
   color: #DF1111;
+  text-shadow: 0px 0px 2px rgb(103, 5, 5), 0px 0px 1px rgb(103, 5, 5), 0px 0px 3px rgb(103, 5, 5);
   font-size: 40px;
   letter-spacing: 3px;
   width: 690px;
@@ -575,13 +631,10 @@ h1, h2, h3, h4, h5, h5, h6, p {
 
 @media (max-width: 1350px) {
   .home {
-    margin: 0 auto;
-    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
   }
   .home .home-container {
-    margin: 0 auto;
     width: 80%;
   }
   .home .home-container .home-flex {
@@ -595,7 +648,6 @@ h1, h2, h3, h4, h5, h5, h6, p {
   .home .home-container .home-info-name {
     font-size: 28px;
     letter-spacing: 4px;
-    font-weight: 500;
   }
   .home .home-container .home-info-title {
     color: #DF1111;
@@ -609,9 +661,8 @@ h1, h2, h3, h4, h5, h5, h6, p {
   }
   .home .home-container .home-info-body {
     max-width: 325px;
-    letter-spacing: 1px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 23px;
   }
   .home .home-container .home-info-links {
     margin-top: 30px;
@@ -628,7 +679,6 @@ h1, h2, h3, h4, h5, h5, h6, p {
 @media (max-width: 800px) {
   .home {
     margin: 0 auto;
-    width: 100%;
     margin-top: 40px;
     margin-bottom: 50px;
   }
@@ -648,15 +698,14 @@ h1, h2, h3, h4, h5, h5, h6, p {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: auto;
-    height: 670px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    min-width: 290px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 670px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    min-width: 290px;
   }
   .home .home-container .home-info {
     font-family: title;
@@ -762,6 +811,11 @@ h1, h2, h3, h4, h5, h5, h6, p {
   transition: 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 @font-face {
   font-family: title;
   src: url("../assets/fonts/GowunBatang-Regular.ttf");
@@ -788,6 +842,14 @@ h1, h2, h3, h4, h5, h5, h6, p {
   .top-left {
     height: 30px;
     width: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-right {
+    display: none;
+  }
+  .top-left {
+    display: none;
   }
 }
 .project-card {
@@ -1027,6 +1089,11 @@ h1, h2, h3, h4, h5, h5, h6, p {
   transition: 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 @font-face {
   font-family: title;
   src: url("../assets/fonts/GowunBatang-Regular.ttf");
@@ -1055,9 +1122,17 @@ h1, h2, h3, h4, h5, h5, h6, p {
     width: 30px;
   }
 }
+@media (max-width: 500px) {
+  .bottom-right {
+    display: none;
+  }
+  .top-left {
+    display: none;
+  }
+}
 .photography {
   margin-top: 100px;
-  height: 750px;
+  height: 700px;
 }
 .photography .photos-title {
   font-family: title;

@@ -21,9 +21,8 @@ export default function ProjectCard(props){
                <a href={github} target='_blank'> <div className="project-card-info-source">Source</div></a>
             </div>
         </div>
-       <a href={url}> <img  src={"imgs/" + img } className="project-img"/></a>
+       <a href={url} target='_blank'> <img  src={"imgs/" + img } className="project-img"/></a>
         
         </div>
     )
-    // src\assets\imgs\Music-db-2.0.PNG
 }

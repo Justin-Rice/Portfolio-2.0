@@ -1,12 +1,8 @@
 import './nav.scss'
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-export default function Nav(){
-    // const ScrollLink = Scroll.ScrollLink 
-
-    
+import { Link } from 'react-scroll';
+export default function Nav(){    
     return (
         <div className="nav">
-           
             <Link 
                 to="home" 
                 smooth='easeInCubic'
@@ -24,12 +20,10 @@ export default function Nav(){
                 duration={400}
                 className="dot"
                 id='d2'
-                isDynamic={true}
                 spy={true}
                 activeClass='active'
               />
-            
-            <Link 
+              <Link 
                 to="photography" 
                 smooth='easeInCubic'
                 duration={400}
@@ -37,6 +31,7 @@ export default function Nav(){
                 id='d3'
                 isDynamic={true}
                 spy={true}
+                offset={-100}
                 activeClass='active'
               />
         </div>

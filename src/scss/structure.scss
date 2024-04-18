@@ -10,7 +10,6 @@ $wht: #FFFFFF;
   box-sizing: border-box;
 }
 html, body {
-// height: 100%;
 background-color: $bg;
 scroll-behavior:smooth;
 
@@ -44,6 +43,10 @@ h1, h2, h3, h4, h5, h5, h6, p{
   transition: 0.5s;
 
 }
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
+}
 
 @font-face {
   font-family: title;
@@ -71,10 +74,21 @@ h1, h2, h3, h4, h5, h5, h6, p{
   .bottom-right{
     height: 30px;
     width: 30px;
+
   }
 
   .top-left{
     height: 30px;
     width: 30px;
+  }
+}
+
+@media(max-width: 500px){
+  .bottom-right{
+   display: none;
+  }
+
+  .top-left{
+    display: none;
   }
 }
