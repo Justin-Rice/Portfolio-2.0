@@ -5,10 +5,9 @@
     margin-top: 60px;
     margin-bottom: 50px;
     position: relative;
-    // background-color: aliceblue;
+    //  background-color: aliceblue;
     width: 80%;
     margin: 0 auto;
-
     
     &-title{
         font-family: title;
@@ -21,16 +20,17 @@
         left: -25px;
         letter-spacing: 3px;
         color: structure.$rd;
+        transition: 0.5s;
+
 
     }
     &-container{
         margin: 0 auto;
-        width: 61%;
+        width: 70%;
         position: relative;
         transition: 0.5s;
         padding-top: 30px;
         padding-bottom: 30px;
-
     }
 
     &-flex{
@@ -39,6 +39,20 @@
 }
 
 @media(max-width: 1350px){
-   
+    .projects{
+        
+        &-container{
+            width: 80%;
+        }
+       }
+    }
+
+
+@media(max-width: 800px){
+   .projects{
+    &-title{
+        left: 5px;
+    }
+   }
 
 }
